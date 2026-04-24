@@ -33,12 +33,13 @@ def file_list():
 sleep(0.5); print("\nLinux Disk Utilities, LDU")
 sleep(0.5); print("Version 01.00.00")
 sleep(0.5); print("COPYRIGHT VOID STUDIOS 2026")
-sleep(0.5); print("COVERED UNDER GNU General Public License 2.x\n")
-sleep(0.5); print("[H]ELP")
+sleep(0.5); print("COVERED UNDER GNU General Public License 2.x\n\n")
+sleep(1.5); print("[H]ELP")
 sleep(0.8); print("[E]XIT: Stops the program")
 sleep(0.5); print("[D]ISK: Shows storage capabilities [Total, Free, Used]")
 sleep(0.5); print("[R]EAD: Lists largest files in HOME [~] directory")
 sleep(0.5); print("<>E: Adding 'E' to any selection does an auto-stop after it runs.")
+sleep(0.5); print("!!!! CHECK OUT VOID STUDIOS' UNPUBLISHED GAME, The Mysteries of Murder, WHICH IS STILL IN DEVELOPMENT [COVERED UNDER CUSTOM EULA] !!!!")
 #introduction
 
 
@@ -56,7 +57,7 @@ while True:
 	
 	if choice == "D":
 		disk_size()
-		break
+		
 
 	if choice == "R":
 		file_list()
@@ -72,6 +73,6 @@ while True:
 		
 	if choice == "H":
 		print("To switch the speed of how it lists things out, change the numbers in () for 'sleep' | For any issues, email: voiddevr@protonmail.com or N4llKer3nel@protonmail.com\n")
-		
+
 	if choice not in ["D", "R", "DE", "RE", "H"]:
 		print("INVALID SELECTION\n")
