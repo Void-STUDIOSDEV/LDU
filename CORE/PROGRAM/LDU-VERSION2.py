@@ -8,7 +8,7 @@ current_os = platform.system()
 files = []
 
 def progWindows():
-		home = os.path.expanduser("C:")
+		home = os.path.expanduser("C:\\")
 		time.sleep(0.7); print("LISTING...\n")
 		total, used, free = shutil.disk_usage(".")
 		time.sleep(0.5); print("TOTAL: ", total / (1024**3), "GB")
